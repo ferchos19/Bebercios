@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.fer.bebercios.MainActivity">
+    tools:context="com.example.fer.bebercios.MainActivity"
+    android:background="#484848">
 
     <Button
         android:id="@+id/boton"
@@ -19,22 +20,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.9"
+        android:background="@drawable/botonstyle"
+        android:textColor="#212121"/>
 
     <TextView
         android:id="@+id/texto"
-        android:layout_width="300dp"
+        android:layout_width="298dp"
         android:layout_height="300dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_margin="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="pene"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#484848"
+        android:gravity="center"
+        android:text="PENE"
         android:textAlignment="center"
+        android:textColor="#ff9800"
+        android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintVertical_bias="0.184" />
 
 </android.support.constraint.ConstraintLayout>

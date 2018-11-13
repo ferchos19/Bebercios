@@ -6,10 +6,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     Button boton;
     TextView texto;
+    Random random;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                String[] array = texto.getResources().getStringArray(R.array.YoNunca);
+                String random = array[new Random().nextInt(array.length)];
 
-
-                String[] myString = getResources().getStringArray(R.array.YoNunca);
-                texto.setText(myString[.nextInt(myString.length)]););
+                texto.setText(random);
 
 
             }
